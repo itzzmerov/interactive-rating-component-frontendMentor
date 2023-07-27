@@ -8,26 +8,33 @@
   
   <title>Frontend Mentor | Interactive rating component</title>
 
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; color: white; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="star">
+        <i class="fa-solid fa-star"></i>
+      </div>
+      <h1 class="title">How did we do?</h1>
+      <p class="desc">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      <div class="ratings">
+        <h3 class="numberOne">1</h3>
+        <h3 class="numberTwo">2</h3>
+        <h3 class="numberThree">3</h3>
+        <h3 class="numberFour">4</h3>
+        <h3 class="numberFive">5</h3>
+      </div>
+      <a href="success.html" type="submit-btn">SUBMIT</a>
+    </div>
+  </div>
 
-  <!-- Rating state start -->
-
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
 
   <!-- Thank you state start -->
 
@@ -36,7 +43,7 @@
   Thank you!
 
   We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
+  don't hesitate to get in touch!
 
   <!-- Thank you state end -->
 
