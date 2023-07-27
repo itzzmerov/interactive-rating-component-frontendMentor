@@ -94,12 +94,18 @@ body {
     justify-content: center;
     align-items: center;
     margin: 1rem 0 2.5rem 0;
+    cursor: pointer;
 }
 
 .ratings .numbers:hover {
     background-color: var(--orange);
     color: var(--white);
 }
+
+.ratings .numbers.selected {
+    background-color: var(--light-grey);
+    color: var(--orange);
+  }
 
 .submit-btn {
     width: 100%;

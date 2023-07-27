@@ -12,10 +12,22 @@
     <div class="container">
         <div class="wrapper">
             <img src="images/illustration-thank-you.svg" alt="Thank you SVG">
-            <p class="selected">You selected [4] out of 5</p>
+            <p class="selected">You selected 5 out of 5</p>
             <h1 class="title">Thank you!</h1>
             <p class="desc">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
         </div>
     </div>
+
+    <script>
+        // Function to retrieve the selected rating value from the URL and display it in the "selected" paragraph
+        document.addEventListener('DOMContentLoaded', function () {
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const selectedRating = urlParams.get('rating');
+
+            const selectedParagraph = document.querySelector('.selected');
+            selectedParagraph.innerText = `You selected ${selectedRating} out of 5`;
+        });
+    </script>
 </body>
 </html>
