@@ -8,6 +8,7 @@
     --white:  hsl(0, 0%, 100%);
     --light-grey: hsl(217, 12%, 63%);
     --medium-grey: hsl(216, 12%, 54%);
+    --light-dark-blue: hsl(212, 19%, 31%);
     --dark-blue: hsl(213, 19%, 18%);
     --very-dark-blue: hsl(216, 12%, 8%);
 
@@ -26,4 +27,54 @@
 
 body {
     background-color: var(--very-dark-blue);
+    color: var(--white);
+    font-family: var(--font-main);
+    font-weight: 400;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    background-color: var(--dark-blue);
+    padding: 2.5rem;
+    width: 400px;
+    height: auto;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 200px;
+    margin-bottom: 2rem;
+}
+
+.selected {
+    background-color: var(--light-dark-blue);
+    padding: 0.5rem 1rem;
+    color: var(--orange);
+    margin: 2rem 0;
+    border-radius: 100px;
+}
+
+.title {
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.desc {
+    text-align: center;
+    font-family: var(--font-main);
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--medium-grey);
 }
