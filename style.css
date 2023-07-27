@@ -102,11 +102,6 @@ body {
     color: var(--white);
 }
 
-.ratings .numbers.selected {
-    background-color: var(--light-grey);
-    color: var(--orange);
-  }
-
 .submit-btn {
     width: 100%;
     background-color: var(--orange);

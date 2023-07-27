@@ -44,19 +44,8 @@
     function selectRating(rating) {
       const selectedRating = rating;
       localStorage.setItem('selectedRating', selectedRating);
-
-      // Remove the 'selected' class from all ratings
-      const ratings = document.querySelectorAll('.numbers');
-      ratings.forEach(rating => {
-        rating.classList.remove('selected');
-      });
-
-      // Add the 'selected' class to the clicked rating
-      const selectedElement = document.querySelector('.number' + rating);
-      selectedElement.classList.add('selected');
     }
 
-    // Function to handle the submission
     function submitRating() {
       const selectedRating = localStorage.getItem('selectedRating');
       const successLink = document.querySelector('.submit-btn');
