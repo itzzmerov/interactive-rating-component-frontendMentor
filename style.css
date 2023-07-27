@@ -8,6 +8,7 @@
     --white:  hsl(0, 0%, 100%);
     --light-grey: hsl(217, 12%, 63%);
     --medium-grey: hsl(216, 12%, 54%);
+    --light-dark-blue: hsl(212, 19%, 31%);
     --dark-blue: hsl(213, 19%, 18%);
     --very-dark-blue: hsl(216, 12%, 8%);
 
@@ -26,4 +27,94 @@
 
 body {
     background-color: var(--very-dark-blue);
+    color: var(--white);
+    font-family: var(--font-main);
+    font-weight: 400;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    background-color: var(--dark-blue);
+    padding: 2.5rem;
+    width: 400px;
+    height: auto;
+    border-radius: 25px;
+}
+
+.star {
+    background-color: var(--light-dark-blue);
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.star img {
+    width: 25px;
+    height: 25px;
+}
+
+.title {
+    font-family: var(--font-main);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.desc {
+    font-family: var(--font-main);
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: var(--medium-grey);
+}
+
+.ratings {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ratings .numbers {
+    padding: 1rem;
+    background-color: var(--light-dark-blue);
+    width: 50px;
+    height: 50px;
+    color: var(--light-grey);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0 2.5rem 0;
+}
+
+.ratings .numbers:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: var(--orange);
+    text-decoration: none;
+    color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-btn:hover {
+    background-color: var(--white);
+    color: var(--orange);
 }
